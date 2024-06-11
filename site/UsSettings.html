@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="popup" style="display:none">
+        <div class="popupmenu" id="savesettings">De aanpassingen van uw account instellingen zijn opgeslagen. Er wordt
+            automatisch een mail naar uw
+            e-mail adres gestuurd met de bevestiging van deze aanpassingen.
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+        <div class="popupmenu" id="logout">Weet u zeker dat u wilt uitloggen?
+            <div class="buttonarea">
+                <div class="textbutton" id="logoutyes">Ja</div>
+                <div class="textbutton" id="logoutno">Nee</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bannerd">KompaKat</div>
+    <div class="return"></div>
+    <div class="contentd" id="settings">
+        <label>Gebruikersnaam:</label><br>
+        <input type="text" id="formelement" placeholder="Voorbeeld123"><br><br>
+        <label>Huidig wachtwoord:</label>
+        <div class="extrainfo">Nodig om een verandering op te slaan</div><br>
+        <input type="password" id="formelement"><br><br>
+        <label>Nieuw wachtwoord:</label><br>
+        <input type="password" id="formelement"><br><br>
+        <label>Herhaling nieuw wachtwoord:</label><br>
+        <input type="password" id="formelement"><br><br>
+        <label>E-mail adres:</label><br>
+        <input type="email" id="formelement" placeholder="Voorbeeld1@gmail.com"><br>
+
+        <div class="buttonarea">
+            <div class="textbutton" id="savebutton">Opslaan</div>
+            <div class="textbutton" id="logoutbutton">Uitloggen</div>
+        </div>
+    </div>
+    <script src="scriptsettings.js"></script>
+</body>
+
+</html>

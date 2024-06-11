@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="popup" style="display:none;">
+
+        <div class="popupmenu" id="reportvideomenu">Rapporteer een video wanner:
+            <ul>
+                <li>Er indicatie is van dierenmishandelijk voor of tijdens de video.</li>
+                <li>Er indicatie is van dierenverwaarlozing..</li>
+                <li>Het dier in de video er gewond uit ziet of in gevaar lijkt te zijn.</li>
+                <li>Er geen kat in de video te zien is.</li>
+                <li>De video of iemand in de video de wet overtreed.</li>
+            </ul>
+            Wanneer je een video raporteert, zoekt ons team uit of de video terecht is geraporteert. Zo nodig zorgen wij
+            er voor dat de nodige acties worden ondernomen om de veiligheid en gezondheid van het dier en/of persoon in
+            de video veilig wordt gesteld.
+            <div class="textbutton" id="confirmreport">Raporteer</div>
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+
+        <div class="popupmenu" id="reportconfirmmenu">Bedankt voor het raporteren van deze video. Ons team zal uitzoeken
+            welke acties er mogelijk ondernomen moeten worden om de veiligheid en gezondheid van het dier en/of mens
+            veilig te stellen.
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+
+        <div class="popupmenu" id="shelteroptionmenu">
+            Deze kat is momenteel <b>niet</b> opgenomen in een asiel.<br>
+            <div class="textbutton" id="disabled">Bekijk in asiel</div><br>
+            Deze kat is <b>al wel</b> geclaimed. <br>
+            <div class="textbutton" id="disabled">Claim mijn kat</div><br>
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+
+    </div>
+    <div class="return"></div>
+
+    <div class="banners" id="catviewbanner">KompaKat</div>
+    <div class="contents">
+        <div class="gifcontainer">
+            <div class="gif" id="gif1"
+                style="background-image: url('https://64.media.tumblr.com/bf544231d2f367e8b161b5a19db4b2fe/tumblr_n877riYhO51rv775qo4_r1_500.gif');">
+            </div>
+            <div class="gif" id="gif2"
+                style="background-image: url('https://media4.giphy.com/media/q5h9HOkfbRU88/giphy.gif');"></div>
+            <div class="gif" id="gif3" style="background-image: url('https://i.gifer.com/FMdC.gif');"></div>
+            <div class="buttonarea" id="catviewbuttons">
+                <div class="button" id="reportvideo"><img src="https://i.ibb.co/nmxS2H8/Emergency.png"></div>
+                <div class="button" id="shelteroption"><img src="https://i.ibb.co/yRjhGj9/Collar.png"></div>
+                <div class="button" id="like"><img src="https://i.ibb.co/SPS9HHy/Like.png"></div>
+                <div class="button" id="liked" style="display:none;"><img src="https://i.ibb.co/MZThRXx/Liked.png">
+                </div>
+                <div class="button" id="share"><img src="https://i.ibb.co/yyX6DnT/Share.png"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptcatview.js"></script>
+</body>
+
+</html>

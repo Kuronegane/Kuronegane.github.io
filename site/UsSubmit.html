@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="popup" style="display:none;">
+        <div class="popupmenu" id="emergencymenu">
+            <div class="phone"><img src="https://i.ibb.co/cFvsSWt/Phone.png"> 144</div>
+            Je belt het nummer van de dierenambulance wanneer:
+            <ul>
+                <li>Je een dier ziet die een dierenambulance nodig heeft.</li>
+                <li>Je een verwaarloost dier ziet.</li>
+                <li>Je een mishandeld dier ziet.</li>
+                <li>Je een gewond dier ziet.</li>
+                <li>Je een dier in nood ziet.</li>
+                <li>Je twijfelt of je een van de bovenstaande ziet.</li>
+            </ul>
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+
+        <div class="popupmenu" id="submitcat">
+            Succesvol ingestuurd. Bedankt voor het insturen van deze kat. Deze data helpt ons om de vrijwilligers van de
+            dierenambulance zo efficient mogelijk te laten werken.
+            <div class="close"><img src="https://i.ibb.co/P5kyP9T/Close.png"></div>
+        </div>
+
+    </div>
+    <div class="return"></div>
+
+    <div class="banners">KompaKat</div>
+    <div class="contents">
+        <div class="onebuttoncontainer">
+            <div class="button" id="emergencybutton"><img src="https://i.ibb.co/nmxS2H8/Emergency.png"></div>
+            <div class="bigbold">Lijkt de kat gewond?</div>
+        </div>
+        <hr class="hr">
+
+        <div class="submissionform">
+            <div class="activelocation"><img src="https://i.ibb.co/FmKQdN1/Location2.png"></div>
+            Lovensdijkstraat 61,
+            Breda, Noord-Brabant
+            <br><br><br><br>Voeg minstens één foto toe.<br><br>
+            <div class="camerabutton"><img src="https://i.ibb.co/Mp00f3Y/Camera.png"></div><br>
+            <div class="grey">Geen foto geüpload...<br>Kan geen kenmerken herkennen zonder foto.<br><br>
+            </div>
+            Controleer alstublieft of de AI de kenmerken van de kat in de foto correct herkent heeft.
+            <label class="container">De AI heeft de kenmerken correct.
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">De AI heeft de kenmerken verkeerd.
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <div class="buttonarea">
+                <div class="textbutton" id="submit">Stuur in</div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptsubmit.js"></script>
+</body>
+
+</html>
