@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 8vh 8vh 70vh 14vh;
+    margin: 0vw;
+}
+
+.bannerd {
+    height: 15vh;
+    background-color: #be6b2f;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poetsen One",
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12vw;
+    color: #f6f6f6;
+    box-shadow: 0vw 0.6vw 20px #8b8b8b;
+}
+
+.banners {
+    background-color: #be6b2f;
+    height: 7.5vh;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poetsen One",
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    color: #f6f6f6;
+    box-shadow: 0vw 0.3vw 15px #8b8b8b;
+}
+
+.contentd {
+    background-color: #f6f6f6;
+    grid-row: 3/5;
+    grid-column: 1/2;
+    font-family: 'Roboto',
+        'sans-serif';
+    font-size: 3vw;
+}
+
+.contents {
+    background-color: #f6f6f6;
+    grid-row: 2/5;
+    grid-column: 1/2;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+#mainpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picturebutton {
+    width: 78vw;
+    height: 25vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    box-shadow: 0vw 1vw 20px #8b8b8b;
+    color: #f6f6f6;
+    object-fit: cover;
+}
+
+.picturebutton:hover {
+    box-shadow: none;
+}
+
+.thankyou {
+    position: absolute;
+    margin-top: 81vh;
+}
+
+.warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 1vh;
+}
+
+.button {
+    float: left;
+    height: 15vw;
+    width: 15vw;
+    background-color: #be6b2f;
+    border-radius: 15px;
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0vw 1vw 20px #8b8b8b;
+    color: #f6f6f6;
+    object-fit: cover;
+}
+
+.button:hover,
+.close:hover {
+    background-color: #e8b691;
+    box-shadow: none;
+}
+
+.bigbold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    float: left;
+    font-size: 5vw;
+    margin-left: 2vw;
+    margin-right: 3vw;
+}
+
+.repdata {
+    width: auto;
+    height: 11vh;
+    margin: 5vw 10vw 5vw 10vw;
+    padding-bottom: 5vw;
+    border-bottom: 0.5vw solid #be6b2f;
+    font-size: 3vw;
+}
+
+.claimbutton {
+    float: right;
+    height: 18vw;
+    width: 25vw;
+    padding: 2vw;
+    background-color: #be6b2f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0vw 1vw 20px #8b8b8b;
+    color: #f6f6f6;
+    font-size: 3.5vw;
+    margin-left: 3vw;
+}
+
+#college {
+    background-color: #b19f92;
+}
+
+#claimed {
+    background-color: #e8b691;
+}
+
+#claimed:hover {
+    box-shadow: none;
+}
+
+#claimable:hover {
+    background-color: #e8b691;
+    box-shadow: none;
+}
+
+#claimable::before {
+    content: "Claim";
+}
+
+#claimed::before {
+    content: "Geclaimed"
+}
+
+.return {
+    position: absolute;
+    background-image: url("https://i.ibb.co/mvS51Wp/Back.png");
+    height: 10vw;
+    width: 10vw;
+    margin: 2vw;
+    z-index: 5;
+}
