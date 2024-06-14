@@ -75,20 +75,44 @@ document.addEventListener('DOMContentLoaded', function () {
         const nextGif = gifs[nextGifIndex];
 
         // Prepare the next GIF
+        nextGif.style.transition = 'none'; // Disable transition temporarily
         nextGif.style.transform = 'translateY(100%)'; // Position it at the bottom first
         nextGif.style.zIndex = '3';
-        setTimeout(() => {
-            nextGif.style.transition = 'transform 0.5s';
-            nextGif.style.transform = 'translateY(0)';
-        }, 20); // Use a tiny delay to allow the browser to apply the initial position
+
+        // Force a reflow to apply the initial position immediately
+        nextGif.offsetHeight; // Reading this property forces reflow
+
+        // Re-enable the transition and start the animation
+        nextGif.style.transition = 'transform 0.5s';
+        nextGif.style.transform = 'translateY(0)';
 
         // Move the current GIF up and then reset its position
         currentGif.style.transition = 'transform 0.5s';
         currentGif.style.transform = 'translateY(-100%)';
+
         setTimeout(() => {
             currentGif.style.zIndex = '1';
+            currentGif.style.transition = 'none'; // Disable transition temporarily
             currentGif.style.transform = 'translateY(100%)'; // Move it back down for future use
+
+            // Force a reflow to apply the reset position immediately
+            currentGif.offsetHeight; // Reading this property forces reflow
+
             currentGifIndex = nextGifIndex;
+            const followingGifIndex = (currentGifIndex + 1) % gifs.length;
+            gifs[followingGifIndex].style.transition = 'none'; // Disable transition temporarily
+            gifs[followingGifIndex].style.transform = 'translateY(100%)';
+
+            // Force a reflow to apply the reset position immediately
+            gifs[followingGifIndex].offsetHeight; // Reading this property forces reflow
+
+            const previousGifIndex = (currentGifIndex - 1 + gifs.length) % gifs.length;
+            gifs[previousGifIndex].style.transition = 'none'; // Disable transition temporarily
+            gifs[previousGifIndex].style.transform = 'translateY(-100%)';
+
+            // Force a reflow to apply the reset position immediately
+            gifs[previousGifIndex].offsetHeight; // Reading this property forces reflow
+
             updateLikeButton(); // Update the like button based on the new current GIF
             isAnimating = false;
         }, 500); // This duration should match the CSS transition duration
@@ -99,24 +123,48 @@ document.addEventListener('DOMContentLoaded', function () {
         isAnimating = true;
 
         const currentGif = gifs[currentGifIndex];
-        const previousGifIndex = (currentGifIndex - 1 + gifs.length) % gifs.length;
-        const previousGif = gifs[previousGifIndex];
+        const prevGifIndex = (currentGifIndex - 1 + gifs.length) % gifs.length;
+        const prevGif = gifs[prevGifIndex];
 
         // Prepare the previous GIF
-        previousGif.style.transform = 'translateY(-100%)'; // Position it at the top first
-        previousGif.style.zIndex = '3';
-        setTimeout(() => {
-            previousGif.style.transition = 'transform 0.5s';
-            previousGif.style.transform = 'translateY(0)';
-        }, 20); // Use a tiny delay to allow the browser to apply the initial position
+        prevGif.style.transition = 'none'; // Disable transition temporarily
+        prevGif.style.transform = 'translateY(-100%)'; // Position it at the top first
+        prevGif.style.zIndex = '3';
+
+        // Force a reflow to apply the initial position immediately
+        prevGif.offsetHeight; // Reading this property forces reflow
+
+        // Re-enable the transition and start the animation
+        prevGif.style.transition = 'transform 0.5s';
+        prevGif.style.transform = 'translateY(0)';
 
         // Move the current GIF down and then reset its position
         currentGif.style.transition = 'transform 0.5s';
         currentGif.style.transform = 'translateY(100%)';
+
         setTimeout(() => {
-            currentGif.style.zIndex = '1';
+            currentGif.style.zIndex = '2';
+            currentGif.style.transition = 'none'; // Disable transition temporarily
             currentGif.style.transform = 'translateY(-100%)'; // Move it back up for future use
-            currentGifIndex = previousGifIndex;
+
+            // Force a reflow to apply the reset position immediately
+            currentGif.offsetHeight; // Reading this property forces reflow
+
+            currentGifIndex = prevGifIndex;
+            const followingGifIndex = (currentGifIndex - 1 + gifs.length) % gifs.length;
+            gifs[followingGifIndex].style.transition = 'none'; // Disable transition temporarily
+            gifs[followingGifIndex].style.transform = 'translateY(-100%)';
+
+            // Force a reflow to apply the reset position immediately
+            gifs[followingGifIndex].offsetHeight; // Reading this property forces reflow
+
+            const nextGifIndex = (currentGifIndex + 1) % gifs.length;
+            gifs[nextGifIndex].style.transition = 'none'; // Disable transition temporarily
+            gifs[nextGifIndex].style.transform = 'translateY(100%)';
+
+            // Force a reflow to apply the reset position immediately
+            gifs[nextGifIndex].offsetHeight; // Reading this property forces reflow
+
             updateLikeButton(); // Update the like button based on the new current GIF
             isAnimating = false;
         }, 500); // This duration should match the CSS transition duration
