@@ -68,6 +68,7 @@ body {
     background-color: #f6f6f6;
     grid-row: 3/5;
     grid-column: 1/2;
+    font-size: 3vw;
 }
 
 .contents {
@@ -181,6 +182,7 @@ body {
     width: 10vw;
     margin: 2vw;
     z-index: 5;
+    background-size: 10vw 10vw;
 }
 
 .close {
@@ -313,6 +315,9 @@ hr {
     -ms-user-select: none;
     user-select: none;
     font-size: 3.5vw;
+    color: #191919;
+    font-weight: 400;
+    font-family: 'roboto', 'sans-serif'
 }
 
 .container input {
@@ -325,8 +330,8 @@ hr {
     position: absolute;
     top: 0;
     left: 0;
-    height: 3.5vw;
-    width: 3.5vw;
+    height: 4.5vw;
+    width: 4.5vw;
     background-color: #f6f6f6;
     border: 0.3vh solid #457354;
     border-radius: 90px;
@@ -462,17 +467,19 @@ hr {
 label {
     color: #457354;
     font-weight: 600;
+    font-size: 3.5vw
 }
 
 #formelement {
-    height: 5vw;
-    width: 66vw;
+    height: 8vw;
+    width: 70vw;
     border: 0.5vw solid #457354;
     border-radius: 15px;
     font-size: 3vw;
     padding: 1.5vw;
     margin-top: 1vw;
     outline: none;
+    background-color: #f6f6f6;
 }
 
 #formelement:focus {
@@ -654,4 +661,9 @@ label {
 
 #loginchoice {
     height: 22vh;
+}
+
+#loginpage {
+    padding: 5vh 15vw 5vh 15vw;
+    font-family: 'roboto', 'sans serif';
 }
