@@ -413,3 +413,115 @@ label {
     background-color: #a3bae8;
     box-shadow: none;
 }
+
+#addit {
+    padding: 3vw 15vw 3vh 15vw;
+    font-family: 'roboto', 'sans serif';
+    font-size: 3vw;
+}
+
+.gallerij2 img {
+    float: left;
+    display: flex;
+    position: relative;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-right: 3vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    box-shadow: 0vw 0.5vw 10px #8b8b8b;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 6vw;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #191919;
+    font-weight: 400;
+    font-family: 'roboto', 'sans-serif'
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4.5vw;
+    width: 4.5vw;
+    background-color: #f6f6f6;
+    border: 0.3vh solid #436098;
+    border-radius: 90px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 0.5vw;
+    left: 0.5vw;
+    width: 2.3vw;
+    height: 2.3vw;
+    border-radius: 90px;
+    background: #436098;
+}
+
+#formelements {
+    height: 3.5vh;
+    width: 66vw;
+    border: 0.5vw solid #436098;
+    border-radius: 10px;
+    font-size: 2.5vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    outline: none;
+}
+
+#formelements:focus {
+    border-color: #a3bae8;
+}
+
+#smallerlabel {
+    font-size: 3vw;
+    margin-top: 1vh;
+}
+
+#formelementl {
+    height: 11.2vh;
+    width: 66vw;
+    border: 0.5vw solid #436098;
+    border-radius: 10px;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    outline: none;
+}
+
+#formelementl:focus {
+    border-color: #a3bae8;
+}
+
+#addnewcat {
+    margin: 14vh 0vw 0vh 10vw;
+    width: 35vw;
+    text-align: center;
+}
