@@ -350,8 +350,8 @@ hr {
 .container .checkmark:after {
     top: 0.5vw;
     left: 0.5vw;
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.3vw;
+    height: 2.3vw;
     border-radius: 90px;
     background: #457354;
 }
@@ -666,4 +666,11 @@ label {
 #loginpage {
     padding: 5vh 15vw 5vh 15vw;
     font-family: 'roboto', 'sans serif';
+}
+
+.fakelink {
+    color: #457354;
+    display: inline;
+    font-weight: 600;
+    text-decoration: underline;
 }
