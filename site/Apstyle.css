@@ -324,3 +324,7 @@ label {
     background-color: #e8b691;
     box-shadow: none;
 }
+
+a {
+    text-decoration: none;
+}

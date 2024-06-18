@@ -525,3 +525,7 @@ label {
     width: 35vw;
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+}
