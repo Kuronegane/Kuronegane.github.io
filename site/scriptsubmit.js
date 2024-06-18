@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
             hideAllPopups();
         });
     });
-});
 
-document.getElementById('return').addEventListener('click', function () {
-    // Navigate back to the previous page
-    window.history.back();
+    document.getElementById('return').addEventListener('click', function () {
+        // Navigate back to the previous page
+        window.history.back();
+    });
 });
