@@ -159,7 +159,7 @@ body {
 
 .popupmenu {
     background-color: #f6f6f6;
-    width: 54vw;
+    width: 70vw;
     max-height: 80vh;
     margin-left: 15vw;
     margin-top: 17vh;
@@ -167,7 +167,7 @@ body {
     border-radius: 20px;
     padding: 8vw;
     font-family: 'Roboto', 'Sans Serif';
-    font-size: 2vh;
+    font-size: 3.5vw;
 }
 
 #locationbutton,
@@ -265,14 +265,15 @@ input:checked+.slider:before {
     color: #457354;
     font-size: 14vw;
     margin-bottom: 5vw;
-    margin-left: 9vw;
+    margin-left: 15vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-self: center;
     object-fit: contain;
-    border-bottom: 0.8vw solid #457354;
+    text-decoration: underline solid #457354 5px;
+    text-underline-offset: 2vw;
     width: min-content;
 }
 
@@ -395,7 +396,7 @@ hr {
 
 .activelocation {
     float: left;
-    margin-bottom: 2vh;
+    margin: -1.5vh 0vw 0vh 0vw;
 }
 
 #submit {
@@ -502,10 +503,11 @@ label {
 }
 
 #yourcat {
-    padding: 2vw 8vw 5vw 8vw;
+    padding: 2vh 10vw 5vh 10vw;
     font-family: 'roboto',
         'sans serif';
-    font-size: 2.2vw;
+    font-size: 2.24vw;
+    margin-bottom: 5vh;
 }
 
 .catid {
@@ -518,7 +520,7 @@ label {
     display: flex;
     flex-direction: row;
     margin-right: 3vw;
-    margin-bottom: 3vw;
+    margin-bottom: 3vh;
 }
 
 .catid:hover {
@@ -531,7 +533,7 @@ label {
 }
 
 #formelements {
-    height: 3vw;
+    height: 6vw;
     width: 66vw;
     border: 0.5vw solid #457354;
     border-radius: 10px;
@@ -677,4 +679,19 @@ label {
 
 a {
     text-decoration: none;
+}
+
+.catid2 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 25px;
+    object-fit: cover;
+    box-shadow: 0vw 1vw 15px #8b8b8b;
+    margin-top: 5vh;
+    margin-left: -28vw;
+    float: left;
+}
+
+.catid2:hover {
+    box-shadow: none;
 }
