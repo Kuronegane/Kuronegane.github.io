@@ -7,3 +7,5 @@ window.addEventListener('load', function () {
         window.location.href = redirectUrl;
     }, 4500);
 });
+
+//doingthistogetitongit
