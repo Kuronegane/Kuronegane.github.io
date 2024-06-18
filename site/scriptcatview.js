@@ -190,3 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
     addSwipeListener();
     updateLikeButton(); // Initialize like button visibility
 });
+
+document.querySelector('.return').addEventListener('click', function () {
+    window.history.back();
+});

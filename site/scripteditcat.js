@@ -12,3 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         missingButton.style.display = 'flex';
     });
 });
+
+document.querySelector('.return').addEventListener('click', function () {
+    window.history.back();
+});

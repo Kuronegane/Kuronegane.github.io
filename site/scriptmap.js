@@ -81,3 +81,7 @@
 
  // Initial call to set the correct state
  updateMarkers();
+
+ document.querySelector('.return').addEventListener('click', function () {
+     window.history.back();
+ });
